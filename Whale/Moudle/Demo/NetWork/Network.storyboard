@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NgB-sG-xFB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cpJ-vl-51r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NgB-sG-xFB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ws5-oe-zEG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fvd-It-4Du" kind="relationship" relationship="rootViewController" id="1Ku-IC-OZM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMT-zv-0Fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290" y="37"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="yJt-UH-yll">
+            <objects>
+                <tableViewController id="Fvd-It-4Du" customClass="SearchVC" customModule="Whale" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sUG-8O-QTi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="100" id="ZNa-BV-eKx" customClass="SongCell" customModule="Whale" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZNa-BV-eKx" id="7RI-Kf-FEB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="歌名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-hB-JUj">
+                                            <rect key="frame" x="20" y="10" width="335" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfw-5O-GDQ">
+                                            <rect key="frame" x="20" y="39" width="335" height="50.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NXA-hB-JUj" firstAttribute="top" secondItem="7RI-Kf-FEB" secondAttribute="top" constant="10" id="5XI-ex-mI2"/>
+                                        <constraint firstAttribute="trailing" secondItem="NXA-hB-JUj" secondAttribute="trailing" constant="20" id="7be-ME-6kL"/>
+                                        <constraint firstItem="nfw-5O-GDQ" firstAttribute="leading" secondItem="7RI-Kf-FEB" secondAttribute="leading" constant="20" id="7y9-Qb-o7s"/>
+                                        <constraint firstItem="nfw-5O-GDQ" firstAttribute="top" secondItem="NXA-hB-JUj" secondAttribute="bottom" constant="8" id="LLJ-vQ-5HG"/>
+                                        <constraint firstItem="NXA-hB-JUj" firstAttribute="leading" secondItem="7RI-Kf-FEB" secondAttribute="leading" constant="20" id="aWK-xI-cEm"/>
+                                        <constraint firstAttribute="bottom" secondItem="nfw-5O-GDQ" secondAttribute="bottom" constant="10" id="gKn-bS-RTN"/>
+                                        <constraint firstAttribute="trailing" secondItem="nfw-5O-GDQ" secondAttribute="trailing" constant="20" id="msq-we-BZY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="singerLabel" destination="nfw-5O-GDQ" id="H4n-LE-PfE"/>
+                                    <outlet property="songNameLabel" destination="NXA-hB-JUj" id="suJ-IF-g9u"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fvd-It-4Du" id="xg8-iN-Zl0"/>
+                            <outlet property="delegate" destination="Fvd-It-4Du" id="48O-L6-qhX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Tct-4E-Hg3"/>
+                    <connections>
+                        <outlet property="tableView" destination="sUG-8O-QTi" id="2rc-TD-lnG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbX-3p-8u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="38"/>
+        </scene>
+    </scenes>
+</document>

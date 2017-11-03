@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092BAE96BF767FF091A5ABC5 /* Pods_WhaleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41753BB8F4B8798FCC06B594 /* Pods_WhaleUITests.framework */; };
+		347839D60B1D07237D31FCB2 /* Pods_WhaleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C5C0379B90FDBBE997A542 /* Pods_WhaleTests.framework */; };
+		5033B8BA1FAC16180041E326 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8B61FAC16180041E326 /* SearchVC.swift */; };
+		5033B8BC1FAC16D40041E326 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8BB1FAC16D40041E326 /* SongCell.swift */; };
+		5033B8BF1FAC171E0041E326 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8BE1FAC171E0041E326 /* StoryboardHelper.swift */; };
+		5033B8C11FAC1BC20041E326 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8C01FAC1BC20041E326 /* Song.swift */; };
+		5033B8C41FAC1DC70041E326 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8C31FAC1DC70041E326 /* ModelProtocol.swift */; };
+		5033B8C61FAC39BB0041E326 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8C51FAC39BB0041E326 /* RequestHelper.swift */; };
+		5033B8CA1FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B8C91FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift */; };
 		504DF6041FA32353009AC5F2 /* UIImageView+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DF6031FA32353009AC5F2 /* UIImageView+SJAdd.swift */; };
 		504DF6081FA3237F009AC5F2 /* UIView+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DF6071FA3237F009AC5F2 /* UIView+SJAdd.swift */; };
 		504DF60B1FA32390009AC5F2 /* SwordJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DF60A1FA32390009AC5F2 /* SwordJoy.swift */; };
@@ -21,11 +30,13 @@
 		505EBC9B1FA316C800B2B70E /* UIScreen+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9A1FA316C800B2B70E /* UIScreen+SJAdd.swift */; };
 		505EBC9D1FA316ED00B2B70E /* UIDevice+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9C1FA316ED00B2B70E /* UIDevice+SJAdd.swift */; };
 		505EBC9F1FA31ED900B2B70E /* UIColor+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9E1FA31ED900B2B70E /* UIColor+SJAdd.swift */; };
+		509BFD191FA9CC9A00999675 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509BFD181FA9CC9A00999675 /* Network.storyboard */; };
 		50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */; };
 		50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */; };
 		50D1BC881FA81400008B4430 /* Dispatch+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC871FA81400008B4430 /* Dispatch+SJAdd.swift */; };
 		50D1BC8A1FA8142B008B4430 /* Number+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC891FA8142B008B4430 /* Number+SJAdd.swift */; };
 		50D1BC8C1FA82357008B4430 /* UIImage+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */; };
+		93927F9CA68597E606F0E9A6 /* Pods_Whale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A7862A614A28D783235300 /* Pods_Whale.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37EAF288465CD01C6B1F75D3 /* Pods-WhaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.release.xcconfig"; sourceTree = "<group>"; };
+		41753BB8F4B8798FCC06B594 /* Pods_WhaleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5033B8B61FAC16180041E326 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		5033B8BB1FAC16D40041E326 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		5033B8BE1FAC171E0041E326 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		5033B8C01FAC1BC20041E326 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		5033B8C31FAC1DC70041E326 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		5033B8C51FAC39BB0041E326 /* RequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelper.swift; sourceTree = "<group>"; };
+		5033B8C91FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		504DF6031FA32353009AC5F2 /* UIImageView+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SJAdd.swift"; sourceTree = "<group>"; };
 		504DF6071FA3237F009AC5F2 /* UIView+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SJAdd.swift"; sourceTree = "<group>"; };
 		504DF60A1FA32390009AC5F2 /* SwordJoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwordJoy.swift; sourceTree = "<group>"; };
@@ -66,11 +86,19 @@
 		505EBC9A1FA316C800B2B70E /* UIScreen+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+SJAdd.swift"; sourceTree = "<group>"; };
 		505EBC9C1FA316ED00B2B70E /* UIDevice+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+SJAdd.swift"; sourceTree = "<group>"; };
 		505EBC9E1FA31ED900B2B70E /* UIColor+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SJAdd.swift"; sourceTree = "<group>"; };
+		509BFD181FA9CC9A00999675 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC871FA81400008B4430 /* Dispatch+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC891FA8142B008B4430 /* Number+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SJAdd.swift"; sourceTree = "<group>"; };
+		800FDFA3BB0F439B21402288 /* Pods-WhaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83455D0DDC09CFE6CE6CD99A /* Pods-Whale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whale/Pods-Whale.debug.xcconfig"; sourceTree = "<group>"; };
+		885BF624359AE3704A2F67BD /* Pods-WhaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B063DF8D44B383F1C4312E89 /* Pods-Whale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whale/Pods-Whale.release.xcconfig"; sourceTree = "<group>"; };
+		B5C5C0379B90FDBBE997A542 /* Pods_WhaleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A7862A614A28D783235300 /* Pods_Whale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13F02DD9E45B06F5D7ACD93 /* Pods-WhaleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93927F9CA68597E606F0E9A6 /* Pods_Whale.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347839D60B1D07237D31FCB2 /* Pods_WhaleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +122,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BAE96BF767FF091A5ABC5 /* Pods_WhaleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5033B8B11FAC0D770041E326 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8B41FAC16180041E326 /* NetWork */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5033B8B41FAC16180041E326 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				509BFD181FA9CC9A00999675 /* Network.storyboard */,
+				5033B8B51FAC16180041E326 /* Controller */,
+				5033B8B71FAC16180041E326 /* Helper */,
+				5033B8B81FAC16180041E326 /* Model */,
+				5033B8B91FAC16180041E326 /* View */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		5033B8B51FAC16180041E326 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8B61FAC16180041E326 /* SearchVC.swift */,
+				5033B8C91FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5033B8B71FAC16180041E326 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8C51FAC39BB0041E326 /* RequestHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5033B8B81FAC16180041E326 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8C01FAC1BC20041E326 /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5033B8B91FAC16180041E326 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8BB1FAC16D40041E326 /* SongCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5033B8BD1FAC17110041E326 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8BE1FAC171E0041E326 /* StoryboardHelper.swift */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		5033B8C21FAC1DC60041E326 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5033B8C31FAC1DC70041E326 /* ModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		504DF6091FA32390009AC5F2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +213,8 @@
 				505EBC771FA30ABE00B2B70E /* WhaleTests */,
 				505EBC821FA30ABE00B2B70E /* WhaleUITests */,
 				505EBC611FA30ABE00B2B70E /* Products */,
+				E24AD41C494D322D8594B45F /* Pods */,
+				93CBA3BF431F5E35C773A951 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +270,7 @@
 		505EBC921FA30D5700B2B70E /* Moudle */ = {
 			isa = PBXGroup;
 			children = (
+				5033B8B11FAC0D770041E326 /* Demo */,
 				505EBC951FA30D7000B2B70E /* Tool */,
 				505EBC931FA30D5700B2B70E /* ViewController.swift */,
 			);
@@ -177,6 +280,8 @@
 		505EBC951FA30D7000B2B70E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				5033B8C21FAC1DC60041E326 /* Protocol */,
+				5033B8BD1FAC17110041E326 /* StoryBoard */,
 				505EBC961FA3131600B2B70E /* Extension */,
 			);
 			path = Tool;
@@ -217,6 +322,29 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		93CBA3BF431F5E35C773A951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7862A614A28D783235300 /* Pods_Whale.framework */,
+				B5C5C0379B90FDBBE997A542 /* Pods_WhaleTests.framework */,
+				41753BB8F4B8798FCC06B594 /* Pods_WhaleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E24AD41C494D322D8594B45F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83455D0DDC09CFE6CE6CD99A /* Pods-Whale.debug.xcconfig */,
+				B063DF8D44B383F1C4312E89 /* Pods-Whale.release.xcconfig */,
+				885BF624359AE3704A2F67BD /* Pods-WhaleTests.debug.xcconfig */,
+				37EAF288465CD01C6B1F75D3 /* Pods-WhaleTests.release.xcconfig */,
+				800FDFA3BB0F439B21402288 /* Pods-WhaleUITests.debug.xcconfig */,
+				F13F02DD9E45B06F5D7ACD93 /* Pods-WhaleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,9 +352,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 505EBC881FA30ABE00B2B70E /* Build configuration list for PBXNativeTarget "Whale" */;
 			buildPhases = (
+				61990E615407DE5D4B188B06 /* [CP] Check Pods Manifest.lock */,
 				505EBC5C1FA30ABE00B2B70E /* Sources */,
 				505EBC5D1FA30ABE00B2B70E /* Frameworks */,
 				505EBC5E1FA30ABE00B2B70E /* Resources */,
+				E9F08AC477AF5726BDAF6CC2 /* [CP] Embed Pods Frameworks */,
+				F9594F8C94F75F9AD9D119AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +372,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 505EBC8B1FA30ABE00B2B70E /* Build configuration list for PBXNativeTarget "WhaleTests" */;
 			buildPhases = (
+				310DA2961498CDEC5E9B0E19 /* [CP] Check Pods Manifest.lock */,
 				505EBC701FA30ABE00B2B70E /* Sources */,
 				505EBC711FA30ABE00B2B70E /* Frameworks */,
 				505EBC721FA30ABE00B2B70E /* Resources */,
+				93EAC694C10AE616D0BDE85A /* [CP] Embed Pods Frameworks */,
+				AA9D13357645976DD3E7D74A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,9 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 505EBC8E1FA30ABE00B2B70E /* Build configuration list for PBXNativeTarget "WhaleUITests" */;
 			buildPhases = (
+				2D6B19A97F13107085A7FB3A /* [CP] Check Pods Manifest.lock */,
 				505EBC7B1FA30ABE00B2B70E /* Sources */,
 				505EBC7C1FA30ABE00B2B70E /* Frameworks */,
 				505EBC7D1FA30ABE00B2B70E /* Resources */,
+				5B514A1A68E2B19FB843113B /* [CP] Embed Pods Frameworks */,
+				3155670091F90149F09EAD7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,6 +464,7 @@
 				505EBC6E1FA30ABE00B2B70E /* LaunchScreen.storyboard in Resources */,
 				505EBC6B1FA30ABE00B2B70E /* Assets.xcassets in Resources */,
 				505EBC691FA30ABE00B2B70E /* Main.storyboard in Resources */,
+				509BFD191FA9CC9A00999675 /* Network.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,21 +484,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D6B19A97F13107085A7FB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		310DA2961498CDEC5E9B0E19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3155670091F90149F09EAD7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B514A1A68E2B19FB843113B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61990E615407DE5D4B188B06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93EAC694C10AE616D0BDE85A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA9D13357645976DD3E7D74A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F08AC477AF5726BDAF6CC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whale/Pods-Whale-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9594F8C94F75F9AD9D119AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whale/Pods-Whale-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		505EBC5C1FA30ABE00B2B70E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5033B8C11FAC1BC20041E326 /* Song.swift in Sources */,
+				5033B8BC1FAC16D40041E326 /* SongCell.swift in Sources */,
 				50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */,
 				505EBC941FA30D5700B2B70E /* ViewController.swift in Sources */,
 				505EBC641FA30ABE00B2B70E /* AppDelegate.swift in Sources */,
 				50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */,
+				5033B8BF1FAC171E0041E326 /* StoryboardHelper.swift in Sources */,
 				505EBC9B1FA316C800B2B70E /* UIScreen+SJAdd.swift in Sources */,
+				5033B8CA1FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift in Sources */,
 				505EBC981FA3132100B2B70E /* SJApp.swift in Sources */,
+				5033B8BA1FAC16180041E326 /* SearchVC.swift in Sources */,
+				5033B8C41FAC1DC70041E326 /* ModelProtocol.swift in Sources */,
 				504DF60B1FA32390009AC5F2 /* SwordJoy.swift in Sources */,
 				505EBC9F1FA31ED900B2B70E /* UIColor+SJAdd.swift in Sources */,
 				50D1BC881FA81400008B4430 /* Dispatch+SJAdd.swift in Sources */,
 				505EBC9D1FA316ED00B2B70E /* UIDevice+SJAdd.swift in Sources */,
+				5033B8C61FAC39BB0041E326 /* RequestHelper.swift in Sources */,
 				504DF6041FA32353009AC5F2 /* UIImageView+SJAdd.swift in Sources */,
 				504DF6081FA3237F009AC5F2 /* UIView+SJAdd.swift in Sources */,
 				50D1BC8C1FA82357008B4430 /* UIImage+SJAdd.swift in Sources */,
@@ -528,6 +811,7 @@
 		};
 		505EBC891FA30ABE00B2B70E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83455D0DDC09CFE6CE6CD99A /* Pods-Whale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +827,7 @@
 		};
 		505EBC8A1FA30ABE00B2B70E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B063DF8D44B383F1C4312E89 /* Pods-Whale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +843,7 @@
 		};
 		505EBC8C1FA30ABE00B2B70E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885BF624359AE3704A2F67BD /* Pods-WhaleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +861,7 @@
 		};
 		505EBC8D1FA30ABE00B2B70E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EAF288465CD01C6B1F75D3 /* Pods-WhaleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +879,7 @@
 		};
 		505EBC8F1FA30ABE00B2B70E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800FDFA3BB0F439B21402288 /* Pods-WhaleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -608,6 +896,7 @@
 		};
 		505EBC901FA30ABE00B2B70E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13F02DD9E45B06F5D7ACD93 /* Pods-WhaleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
