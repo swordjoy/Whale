@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SJPermission.permission()
+        SJPermission.requestCameraPermission()
     }
 
     override func didReceiveMemoryWarning() {

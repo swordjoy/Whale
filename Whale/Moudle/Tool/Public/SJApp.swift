@@ -9,7 +9,8 @@
 import UIKit
 
 /// 空闭包
-typealias VoidClosure = () -> Void
+public typealias VoidClosure = () -> ()
+public typealias BoolClosure = (Bool) -> ()
 
 public struct SJApp {
     
