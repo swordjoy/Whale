@@ -31,6 +31,7 @@
 		505EBC9F1FA31ED900B2B70E /* UIColor+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9E1FA31ED900B2B70E /* UIColor+SJAdd.swift */; };
 		506B37721FB035940015D397 /* SJPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37711FB035940015D397 /* SJPermission.swift */; };
 		506B37741FB03ED60015D397 /* SJApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37731FB03ED60015D397 /* SJApp.swift */; };
+		506B37771FB049720015D397 /* SJScanHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37761FB049720015D397 /* SJScanHelper.swift */; };
 		509BFD191FA9CC9A00999675 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509BFD181FA9CC9A00999675 /* Network.storyboard */; };
 		50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */; };
 		50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */; };
@@ -88,6 +89,7 @@
 		505EBC9E1FA31ED900B2B70E /* UIColor+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SJAdd.swift"; sourceTree = "<group>"; };
 		506B37711FB035940015D397 /* SJPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJPermission.swift; sourceTree = "<group>"; };
 		506B37731FB03ED60015D397 /* SJApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJApp.swift; sourceTree = "<group>"; };
+		506B37761FB049720015D397 /* SJScanHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJScanHelper.swift; sourceTree = "<group>"; };
 		509BFD181FA9CC9A00999675 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SJAdd.swift"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 		505EBC951FA30D7000B2B70E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				506B37751FB047FA0015D397 /* SJScan */,
 				506B37701FB0357A0015D397 /* Public */,
 				5033B8C21FAC1DC60041E326 /* Protocol */,
 				5033B8BD1FAC17110041E326 /* StoryBoard */,
@@ -321,6 +324,14 @@
 				506B37711FB035940015D397 /* SJPermission.swift */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		506B37751FB047FA0015D397 /* SJScan */ = {
+			isa = PBXGroup;
+			children = (
+				506B37761FB049720015D397 /* SJScanHelper.swift */,
+			);
+			path = SJScan;
 			sourceTree = "<group>";
 		};
 		50D1BC801FA80D95008B4430 /* Foundation */ = {
@@ -646,6 +657,7 @@
 				50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */,
 				5033B8BF1FAC171E0041E326 /* StoryboardHelper.swift in Sources */,
 				505EBC9B1FA316C800B2B70E /* UIScreen+SJAdd.swift in Sources */,
+				506B37771FB049720015D397 /* SJScanHelper.swift in Sources */,
 				5033B8CA1FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift in Sources */,
 				5033B8BA1FAC16180041E326 /* SearchVC.swift in Sources */,
 				5033B8C41FAC1DC70041E326 /* ModelProtocol.swift in Sources */,

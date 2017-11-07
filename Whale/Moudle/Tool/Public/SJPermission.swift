@@ -7,14 +7,13 @@
 //
 
 import Foundation
+import AVFoundation
 import Photos
 
 public struct SJPermission {
     
-    // 先在plist文件里面添加相册授权
-    // 此时处于notDetermined状态,请求相册出现体统弹窗,选择好,同意后为authorized状态,否为denied状态
-    // 此时处于authorized状态,请求相册不出现系统弹窗,但闭包里面会再次执行
-    public static func requestCameraPermission(completion: @escaping BoolClosure) {
+    // 请求相册权限
+    public static func requestPhotosPermission(completion: @escaping BoolClosure) {
         let status = PHPhotoLibrary.authorizationStatus()
         switch status {
             case .authorized: completion(true)
@@ -22,10 +21,37 @@ public struct SJPermission {
             case .notDetermined:
                 PHPhotoLibrary.requestAuthorization { (status) in
                     let temp = (status == .authorized)
-                    completion(temp)
+                    runOnMainThread {
+                        completion(temp)
+                    }
                 }
             }
     }
     
+    // 请求相机权限
+    public static func requestCameraPermission(completion: @escaping BoolClosure) {
+        let status = AVCaptureDevice.authorizationStatus(for: .video)
+        switch status {
+        case .authorized: completion(true)
+        case .denied, .restricted: completion(false)
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video, completionHandler: { (status) in
+                runOnMainThread {
+                    completion(status)
+                }
+            })
+        }
+    }
+    
+    // 去设置界面
+    public static func toSetting() {
+        guard let temp = URL(string: UIApplicationOpenSettingsURLString) else { return }
+        if #available(iOS 10, *) {
+            UIApplication.shared.open(temp, options: [:], completionHandler: nil)
+        }
+        else{
+            UIApplication.shared.openURL(temp)
+        }
+    }
     
 }

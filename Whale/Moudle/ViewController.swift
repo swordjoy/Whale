@@ -13,8 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SJPermission.permission()
-        SJPermission.requestCameraPermission()
+        SJScanHelper.shared.startScan(with: view)
+
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
