@@ -7,10 +7,11 @@ target 'Whale' do
 
 pod 'SwiftyJSON'
 pod 'SnapKit'
+pod 'RxSwift', '~> 4.0'
+pod 'RxCocoa', '~> 4.0'
 
   target 'WhaleTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'WhaleUITests' do

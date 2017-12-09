@@ -43,29 +43,88 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="歌名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-hB-JUj">
-                                            <rect key="frame" x="20" y="10" width="335" height="21"/>
+                                            <rect key="frame" x="20" y="10.5" width="255" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfw-5O-GDQ">
-                                            <rect key="frame" x="20" y="39" width="335" height="50.5"/>
+                                            <rect key="frame" x="20" y="39" width="255" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxV-HX-baD">
+                                            <rect key="frame" x="311" y="10.5" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="MJL-vB-lKF"/>
+                                                <constraint firstAttribute="height" constant="44" id="pLu-GO-ZUO"/>
+                                            </constraints>
+                                            <state key="normal" title="下载"/>
+                                            <connections>
+                                                <action selector="downloadAction:" destination="ZNa-BV-eKx" eventType="touchUpInside" id="yqe-0M-dr7"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxG-ia-MHY">
+                                            <rect key="frame" x="311" y="10.5" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="5FP-6f-ckI"/>
+                                                <constraint firstAttribute="height" constant="44" id="dRl-t6-uUf"/>
+                                            </constraints>
+                                            <state key="normal" title="暂停"/>
+                                            <connections>
+                                                <action selector="pauseAction:" destination="ZNa-BV-eKx" eventType="touchUpInside" id="ebL-OO-37a"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv1-e2-E10">
+                                            <rect key="frame" x="311" y="54" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="Nn6-Qm-qgE"/>
+                                                <constraint firstAttribute="width" constant="44" id="Oxr-ad-KD0"/>
+                                            </constraints>
+                                            <state key="normal" title="取消"/>
+                                            <connections>
+                                                <action selector="cancelAction:" destination="ZNa-BV-eKx" eventType="touchUpInside" id="xeg-Mr-NdZ"/>
+                                            </connections>
+                                        </button>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hES-kZ-Unj">
+                                            <rect key="frame" x="20" y="59.5" width="240" height="2"/>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPS-a6-xCZ">
+                                            <rect key="frame" x="270" y="42" width="31" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="NXA-hB-JUj" firstAttribute="top" secondItem="7RI-Kf-FEB" secondAttribute="top" constant="10" id="5XI-ex-mI2"/>
-                                        <constraint firstAttribute="trailing" secondItem="NXA-hB-JUj" secondAttribute="trailing" constant="20" id="7be-ME-6kL"/>
+                                        <constraint firstAttribute="trailing" secondItem="NXA-hB-JUj" secondAttribute="trailing" constant="100" id="7be-ME-6kL"/>
                                         <constraint firstItem="nfw-5O-GDQ" firstAttribute="leading" secondItem="7RI-Kf-FEB" secondAttribute="leading" constant="20" id="7y9-Qb-o7s"/>
+                                        <constraint firstAttribute="trailing" secondItem="wv1-e2-E10" secondAttribute="trailing" constant="20" id="8Jc-HJ-qFT"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wv1-e2-E10" secondAttribute="bottom" constant="10" id="DW9-8B-Ept"/>
                                         <constraint firstItem="nfw-5O-GDQ" firstAttribute="top" secondItem="NXA-hB-JUj" secondAttribute="bottom" constant="8" id="LLJ-vQ-5HG"/>
+                                        <constraint firstItem="wv1-e2-E10" firstAttribute="top" secondItem="7RI-Kf-FEB" secondAttribute="top" constant="54" id="Uot-Mo-rr9"/>
+                                        <constraint firstAttribute="bottom" secondItem="gPS-a6-xCZ" secondAttribute="bottom" constant="10" id="Ybs-AF-51x"/>
+                                        <constraint firstItem="TxG-ia-MHY" firstAttribute="top" secondItem="7RI-Kf-FEB" secondAttribute="top" constant="10" id="Z4T-EU-f7f"/>
+                                        <constraint firstItem="wv1-e2-E10" firstAttribute="leading" secondItem="gPS-a6-xCZ" secondAttribute="trailing" constant="10" id="Z50-k0-pxo"/>
                                         <constraint firstItem="NXA-hB-JUj" firstAttribute="leading" secondItem="7RI-Kf-FEB" secondAttribute="leading" constant="20" id="aWK-xI-cEm"/>
-                                        <constraint firstAttribute="bottom" secondItem="nfw-5O-GDQ" secondAttribute="bottom" constant="10" id="gKn-bS-RTN"/>
-                                        <constraint firstAttribute="trailing" secondItem="nfw-5O-GDQ" secondAttribute="trailing" constant="20" id="msq-we-BZY"/>
+                                        <constraint firstItem="hES-kZ-Unj" firstAttribute="trailing" secondItem="gPS-a6-xCZ" secondAttribute="leading" constant="-10" id="bKo-Gf-r6o"/>
+                                        <constraint firstAttribute="trailing" secondItem="nxV-HX-baD" secondAttribute="trailing" constant="20" id="bpR-vU-8Ss"/>
+                                        <constraint firstItem="hES-kZ-Unj" firstAttribute="top" secondItem="nfw-5O-GDQ" secondAttribute="bottom" id="eXu-rU-uSw"/>
+                                        <constraint firstItem="nxV-HX-baD" firstAttribute="top" secondItem="7RI-Kf-FEB" secondAttribute="top" constant="10" id="eeD-4U-i2O"/>
+                                        <constraint firstItem="hES-kZ-Unj" firstAttribute="leading" secondItem="7RI-Kf-FEB" secondAttribute="leading" constant="20" id="lqh-Qs-xJU"/>
+                                        <constraint firstAttribute="trailing" secondItem="nfw-5O-GDQ" secondAttribute="trailing" constant="100" id="msq-we-BZY"/>
+                                        <constraint firstAttribute="bottom" secondItem="hES-kZ-Unj" secondAttribute="bottom" constant="5" id="wAt-Tv-n9I"/>
+                                        <constraint firstAttribute="trailing" secondItem="TxG-ia-MHY" secondAttribute="trailing" constant="20" id="xjE-VI-zE1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cancelButton" destination="wv1-e2-E10" id="Gmg-55-Oay"/>
+                                    <outlet property="downloadButton" destination="nxV-HX-baD" id="PnK-0j-H4x"/>
+                                    <outlet property="pauseButton" destination="TxG-ia-MHY" id="GVG-uI-t7b"/>
+                                    <outlet property="progressLabel" destination="gPS-a6-xCZ" id="LRh-U9-rzN"/>
+                                    <outlet property="progressView" destination="hES-kZ-Unj" id="LGL-b8-25d"/>
                                     <outlet property="singerLabel" destination="nfw-5O-GDQ" id="H4n-LE-PfE"/>
                                     <outlet property="songNameLabel" destination="NXA-hB-JUj" id="suJ-IF-g9u"/>
                                 </connections>

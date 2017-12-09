@@ -32,12 +32,14 @@ class RequestHelper {
                     return
                 }
             
-                let json = JSON(data: data)
-                let temps = Song.array(from: json["results"].arrayValue)
-                runOnMainThread {
-                    completion(temps, "")
+                if let json = try? JSON(data: data) {
+                    let temps = Song.array(from: json["results"].arrayValue)
+                    runOnMainThread {
+                        completion(temps, "")
+                    }
                 }
             })
+            
             dataTask?.resume()
         }
     }

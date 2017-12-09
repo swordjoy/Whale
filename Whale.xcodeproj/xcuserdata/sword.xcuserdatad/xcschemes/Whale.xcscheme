@@ -49,6 +49,16 @@
                ReferencedContainer = "container:Whale.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5072A37B1FBEB46100308417"
+               BuildableName = "FrameworkWrapperTests.xctest"
+               BlueprintName = "FrameworkWrapperTests"
+               ReferencedContainer = "container:Whale.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

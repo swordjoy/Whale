@@ -57,8 +57,8 @@ public class SJScanHelper: NSObject {
         cropLayer.fillRule = kCAFillRuleEvenOdd
         cropLayer.opacity = 0.3
         
-        let path1 = UIBezierPath(roundedRect: CGRect(x: 40, y: (UIScreen.width - 80) / 2, width: UIScreen.width - 80, height: UIScreen.width - 80 ), cornerRadius: 4)
-        let path2 = UIBezierPath(rect: view.bounds)
+        let path1 = UIBezierPath(roundedRect: scanRech, cornerRadius: 4)
+        let path2 = UIBezierPath(rect: maskRect)
         path2.append(path1)
         cropLayer.path = path2.cgPath
         

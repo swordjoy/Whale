@@ -6,4 +6,7 @@
 //  Copyright © 2017年 LIU LV YANG. All rights reserved.
 //
 
-import Foundation
+public func example(of description: String, action: () -> Void) {
+    print("\n--- Example of:", description, "---")
+    action()
+}

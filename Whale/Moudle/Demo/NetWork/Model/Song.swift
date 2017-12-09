@@ -9,18 +9,29 @@
 import Foundation
 import SwiftyJSON
 
-struct Song: ModelProtocol {
+class Song {
     
     let songName: String
     let singer: String
     
-    init(json: JSON) {
+    let previewURL: URL?
+    let index: Int
+    var downloaded = false
+    
+    init(json: JSON, index: Int) {
         self.songName = json["trackName"].stringValue
         self.singer = json["artistName"].stringValue
+        self.previewURL = URL(string: json["previewUrl"].stringValue)
+        self.index = index
     }
     
     static func array(from jsonArray: [JSON]) -> [Song] {
-        return jsonArray.map({ Song(json: $0) })
+        var temps: [Song] = []
+        for (index, json) in jsonArray.enumerated() {
+            let song = Song(json: json, index: index)
+            temps.append(song)
+        }
+        return temps
     }
     
 }

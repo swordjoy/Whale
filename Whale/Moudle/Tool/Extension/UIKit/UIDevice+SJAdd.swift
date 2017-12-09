@@ -52,6 +52,12 @@ public extension UIDevice {
         let temp = self.detailedModel[start...tempEnd]
         return temp == "iPhone"
     }
+    
+    public static var isIphoneX: Bool {
+        let temp = self.hardwareModel
+        if temp == "iPhone10,3" || temp == "iPhone10,6" { return true }
+        return false
+    }
   
   /// 是否是iPod
     public static var isPod: Bool {
