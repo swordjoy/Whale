@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 // MARK: - 布局
-
 extension SwordJoy where Base: UIView {
     var orgin: CGPoint {
         get { return base.frame.origin }

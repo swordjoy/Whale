@@ -30,13 +30,49 @@ public final class SwordJoy<Base> {
     }
 }
 
+//// - - - 
+//
+//public protocol SwordJoyStructCompatible {
+//    associatedtype SJCompatibleType
+//    var sj: SJCompatibleType { get }
+//}
+//
+//public extension SwordJoyStructCompatible {
+//    public var sj: SwordJoyStruct<Self> {
+//        return SwordJoyStruct(self)
+//    }
+//}
+//
+//// struct
+//public struct SwordJoyStruct<Base> {
+//    public let base: Base
+//    public init(_ base: Base) {
+//        self.base = base
+//    }
+//}
+
+
+// String
+//public struct SJStringProxy {
+//    public let base: String
+//    public init(_ base: String) {
+//        self.base = base;
+//    }
+//}
+//
+//extension String: SwordJoyCompatible {
+//    public typealias CompatibleType = SJStringProxy
+//    public var sj: SJStringProxy {
+//        return SJStringProxy(self)
+//    }
+//}
+
 extension UIImage: SwordJoyCompatible { }
 
 extension UIView: SwordJoyCompatible { }
 
 extension CALayer: SwordJoyCompatible { }
 
-extension String: SwordJoyCompatible { }
 
 
 

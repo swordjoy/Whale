@@ -105,6 +105,7 @@ extension SJApp {
   public static var library = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first!
   // 临时文件,会自动清理
   public static var tmp = NSTemporaryDirectory()
+    
 }
 
 // MARK: - log
@@ -125,4 +126,18 @@ extension SJApp {
       print("\n= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n")
     #endif
   }
+    
+}
+
+extension SJApp {
+    
+    /// 获取安全的随机数(32位)
+    ///
+    /// - Parameter range: 随机数范围
+    /// - Returns: 得到的随机数
+    public static func random(in range: Range<Int>) -> Int {
+        let count = UInt32(range.upperBound - range.lowerBound)
+        return Int(arc4random_uniform(count)) + range.lowerBound
+    }
+    
 }

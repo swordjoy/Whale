@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500C06FA1FDE254B003DD71F /* UITextField+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C06F91FDE254B003DD71F /* UITextField+SJAdd.swift */; };
 		501808031FC66F2100391741 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501808021FC66F2100391741 /* Download.swift */; };
 		501808051FC6710E00391741 /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501808041FC6710E00391741 /* DownloadHelper.swift */; };
 		501808071FC67AAE00391741 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501808061FC67AAE00391741 /* FileHelper.swift */; };
@@ -39,6 +40,7 @@
 		50D1BC8C1FA82357008B4430 /* UIImage+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */; };
 		50D7A21A1FBEE15500E27A65 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A2191FBEE15500E27A65 /* SupportCode.swift */; };
 		50D7A21C1FBEE19D00E27A65 /* RXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A21B1FBEE19D00E27A65 /* RXSwiftVC.swift */; };
+		50E909AC1FDBE334005AA07C /* String+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E909AB1FDBE334005AA07C /* String+SJAdd.swift */; };
 		60EF4324979A62830683712D /* Pods_Whale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30BFE122EA45831FB5921D1 /* Pods_Whale.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,7 @@
 		174A43BB14A8DF560E340260 /* Pods-Whale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whale/Pods-Whale.release.xcconfig"; sourceTree = "<group>"; };
 		2D9A632E7E7235523A94FFB5 /* Pods-WhaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.release.xcconfig"; sourceTree = "<group>"; };
 		4CC2154C245CDE99B3EEA157 /* Pods_WhaleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500C06F91FDE254B003DD71F /* UITextField+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SJAdd.swift"; sourceTree = "<group>"; };
 		501808021FC66F2100391741 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		501808041FC6710E00391741 /* DownloadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
 		501808061FC67AAE00391741 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SJAdd.swift"; sourceTree = "<group>"; };
 		50D7A2191FBEE15500E27A65 /* SupportCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
 		50D7A21B1FBEE19D00E27A65 /* RXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftVC.swift; sourceTree = "<group>"; };
+		50E909AB1FDBE334005AA07C /* String+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SJAdd.swift"; sourceTree = "<group>"; };
 		6F7833A1CA02195A1942EB1E /* Pods-WhaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC991BA81A12FEBEC17F8BC8 /* Pods-WhaleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E98AEDA7A6E66B24AC70843D /* Pods-WhaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,8 +275,8 @@
 		505EBC961FA3131600B2B70E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				50D1BC801FA80D95008B4430 /* Foundation */,
 				504DF6091FA32390009AC5F2 /* Base */,
+				50D1BC801FA80D95008B4430 /* Foundation */,
 				505EBC991FA316BE00B2B70E /* UIKit */,
 			);
 			path = Extension;
@@ -288,6 +292,7 @@
 				505EBC9A1FA316C800B2B70E /* UIScreen+SJAdd.swift */,
 				50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */,
 				50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */,
+				500C06F91FDE254B003DD71F /* UITextField+SJAdd.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */,
 				50D1BC871FA81400008B4430 /* Dispatch+SJAdd.swift */,
 				50D1BC891FA8142B008B4430 /* Number+SJAdd.swift */,
+				50E909AB1FDBE334005AA07C /* String+SJAdd.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */,
 				505EBC941FA30D5700B2B70E /* ViewController.swift in Sources */,
 				505EBC641FA30ABE00B2B70E /* AppDelegate.swift in Sources */,
+				50E909AC1FDBE334005AA07C /* String+SJAdd.swift in Sources */,
 				50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */,
 				5033B8BF1FAC171E0041E326 /* StoryboardHelper.swift in Sources */,
 				501808051FC6710E00391741 /* DownloadHelper.swift in Sources */,
@@ -506,6 +513,7 @@
 				504DF60B1FA32390009AC5F2 /* SwordJoy.swift in Sources */,
 				506B37741FB03ED60015D397 /* SJApp.swift in Sources */,
 				505EBC9F1FA31ED900B2B70E /* UIColor+SJAdd.swift in Sources */,
+				500C06FA1FDE254B003DD71F /* UITextField+SJAdd.swift in Sources */,
 				50D1BC881FA81400008B4430 /* Dispatch+SJAdd.swift in Sources */,
 				505EBC9D1FA316ED00B2B70E /* UIDevice+SJAdd.swift in Sources */,
 				501808071FC67AAE00391741 /* FileHelper.swift in Sources */,
