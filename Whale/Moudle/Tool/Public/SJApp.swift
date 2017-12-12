@@ -17,6 +17,13 @@ public struct SJApp {
     /// appdelegate
     public static let appDelegate = UIApplication.shared.delegate
     
+    /// 获取keyWindow
+    public static var keyWindow: UIWindow? = {
+        if let window = UIApplication.shared.keyWindow { return window }
+        SJApp.log("keyWindow not found")
+        return nil
+    }()
+    
 // MARK: - APP信息
     private static let SJAppHasBeenOpened = "SJAppHasBeenOpened"
     /// 获取APP name
@@ -91,22 +98,7 @@ public struct SJApp {
     }
 }
 
-// MARK: - 路径
-extension SJApp {
-    
-  public static var homeDirectory = NSHomeDirectory()
-  // 会同步iTunes
-  public static var documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-  // Library/Cache 不会同步iTunes
-  public static var caches = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first!
-  // Library/Preferences, 用户偏好设置,会同步iTunes
-  public static var preferences = NSSearchPathForDirectoriesInDomains(.preferencePanesDirectory, .userDomainMask, true).first!
-    
-  public static var library = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first!
-  // 临时文件,会自动清理
-  public static var tmp = NSTemporaryDirectory()
-    
-}
+
 
 // MARK: - log
 extension SJApp {
@@ -127,6 +119,32 @@ extension SJApp {
     #endif
   }
     
+}
+
+extension SJApp {
+    
+    /// 打电话
+    ///
+    /// - Parameter phoneNumber: 电话号码
+    static func call(with phoneNumber: String) {
+        if #available(iOS 10.0, *) {
+            guard phoneNumber != "",
+                    let number = URL(string: "telprompt://" + phoneNumber) else { return }
+            UIApplication.shared.open(number)
+        } else {
+            let phoneString = "tel:" + phoneNumber
+            let phoneUrl = URL(string: phoneString)
+            
+            guard let tempUrl = phoneUrl else {
+                return
+            }
+            
+            let phoneUrlRequest = URLRequest(url: tempUrl)
+            let webView = UIWebView()
+            webView.loadRequest(phoneUrlRequest)
+            SJApp.keyWindow?.addSubview(webView)
+        }
+    }
 }
 
 extension SJApp {

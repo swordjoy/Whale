@@ -45,11 +45,17 @@ class Hero {
 }
 
 class ViewController: UIViewController {
+    @IBAction func callAction(_ sender: UIButton) {
+        print("11111111")
+    }
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var left: UILabel!
+    @IBOutlet weak var right: UILabel!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(view.safeAreaLayoutGuide.snp.top)
         
 //        guard let urlComponents = URLComponents.init(string: "http://mobile.hktsc.cc/services/list?appPage=serviceList&brandId=1") else {
 //            return
