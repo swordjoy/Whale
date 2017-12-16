@@ -44,6 +44,7 @@ class Hero {
     }
 }
 
+
 class ViewController: UIViewController {
     @IBAction func callAction(_ sender: UIButton) {
         print("11111111")
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("15608222076".sj.isMatchChinaPhoneNumber)
         
 //        guard let urlComponents = URLComponents.init(string: "http://mobile.hktsc.cc/services/list?appPage=serviceList&brandId=1") else {
 //            return

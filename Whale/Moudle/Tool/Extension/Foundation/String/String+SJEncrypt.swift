@@ -8,7 +8,3 @@
 
 import Foundation
 
-//extension SwordJoyStruct where Base: String {
-//    
-//}
-
