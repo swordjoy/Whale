@@ -10,6 +10,16 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    
+    /// 获取随机颜色
+    var randomColor: UIColor {
+        let range = Range<Int>(0...255)
+        let redValue: CGFloat = random(in: range).cgFloat / 255
+        let greenValue: CGFloat = random(in: range).cgFloat / 255
+        let blueValue: CGFloat = random(in: range).cgFloat / 255
+        return UIColor(red: redValue, green:greenValue, blue: blueValue, alpha: 1.0)
+    }
+    
     /// 16进制获取颜色, 这个方法必须要输入正确,不然可能崩溃
     ///
     /// 例子:

@@ -47,7 +47,7 @@ class Hero {
 
 class ViewController: UIViewController {
     @IBAction func callAction(_ sender: UIButton) {
-        print("11111111")
+        UIApplication.shared.isIdleTimerDisabled = true
     }
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var left: UILabel!

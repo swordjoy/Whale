@@ -71,7 +71,7 @@ extension SwordJoy where Base: UIView {
     }
 }
 
-// MARK: - 截图
+// MARK: - 一些方法
 
 extension SwordJoy where Base: UIView {
     /// 截图
@@ -83,5 +83,18 @@ extension SwordJoy where Base: UIView {
         let snap: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return snap!
+    }
+    
+    /// 设置圆角和边线
+    ///
+    /// - Parameters:
+    ///   - radius: 角度
+    ///   - borderWidth: 边线宽度
+    ///   - borderColor: 边线颜色
+    func setCornerRadius(_ radius: CGFloat, borderWidth: CGFloat = 0, borderColor: UIColor?) {
+        base.layer.cornerRadius = radius
+        base.clipsToBounds = true
+        base.layer.borderWidth = borderWidth
+        base.layer.borderColor = borderColor?.cgColor
     }
 }

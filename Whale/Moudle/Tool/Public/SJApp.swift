@@ -48,6 +48,15 @@ public struct SJApp {
         return value
     }
   
+// MARK: - 配置
+    
+    /// 设置屏幕常亮
+    public var isScreenAlwaysBright: Bool {
+        didSet {
+            UIApplication.shared.isIdleTimerDisabled = isScreenAlwaysBright
+        }
+    }
+    
 // MARK: - Function
   
   /// debug执行
@@ -147,15 +156,3 @@ extension SJApp {
     }
 }
 
-extension SJApp {
-    
-    /// 获取安全的随机数(32位)
-    ///
-    /// - Parameter range: 随机数范围
-    /// - Returns: 得到的随机数
-    public static func random(in range: Range<Int>) -> Int {
-        let count = UInt32(range.upperBound - range.lowerBound)
-        return Int(arc4random_uniform(count)) + range.lowerBound
-    }
-    
-}

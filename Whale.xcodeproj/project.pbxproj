@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		500C06FA1FDE254B003DD71F /* UITextField+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C06F91FDE254B003DD71F /* UITextField+SJAdd.swift */; };
+		50158B5F1FE76A690013CC64 /* UINavigationBar+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50158B5E1FE76A690013CC64 /* UINavigationBar+SJAdd.swift */; };
 		501808031FC66F2100391741 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501808021FC66F2100391741 /* Download.swift */; };
 		501808051FC6710E00391741 /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501808041FC6710E00391741 /* DownloadHelper.swift */; };
 		501808071FC67AAE00391741 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501808061FC67AAE00391741 /* FileHelper.swift */; };
@@ -65,6 +66,7 @@
 		2D9A632E7E7235523A94FFB5 /* Pods-WhaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.release.xcconfig"; sourceTree = "<group>"; };
 		4CC2154C245CDE99B3EEA157 /* Pods_WhaleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		500C06F91FDE254B003DD71F /* UITextField+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SJAdd.swift"; sourceTree = "<group>"; };
+		50158B5E1FE76A690013CC64 /* UINavigationBar+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+SJAdd.swift"; sourceTree = "<group>"; };
 		501808021FC66F2100391741 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		501808041FC6710E00391741 /* DownloadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
 		501808061FC67AAE00391741 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */,
 				50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */,
 				500C06F91FDE254B003DD71F /* UITextField+SJAdd.swift */,
+				50158B5E1FE76A690013CC64 /* UINavigationBar+SJAdd.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50158B5F1FE76A690013CC64 /* UINavigationBar+SJAdd.swift in Sources */,
 				5033B8C11FAC1BC20041E326 /* Song.swift in Sources */,
 				5033B8BC1FAC16D40041E326 /* SongCell.swift in Sources */,
 				50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */,
