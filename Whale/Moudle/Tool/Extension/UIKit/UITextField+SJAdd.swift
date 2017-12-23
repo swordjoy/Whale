@@ -8,10 +8,15 @@
 
 import UIKit
 
-extension SwordJoy where Base: UITextField {
+public extension SwordJoy where Base: UITextField {
     
-    var text: String {
+    public var text: String {
         return base.text ?? ""
+    }
+    
+    public func setPlaceholder(_ font: UIFont,_ textColor: UIColor) {
+        base.setValue(textColor, forKeyPath: "_placeholderLabel.textColor")
+        base.setValue(font, forKeyPath: "_placeholderLabel.font")
     }
     
 }

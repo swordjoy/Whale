@@ -31,12 +31,18 @@
 		505EBC9B1FA316C800B2B70E /* UIScreen+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9A1FA316C800B2B70E /* UIScreen+SJAdd.swift */; };
 		505EBC9D1FA316ED00B2B70E /* UIDevice+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9C1FA316ED00B2B70E /* UIDevice+SJAdd.swift */; };
 		505EBC9F1FA31ED900B2B70E /* UIColor+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC9E1FA31ED900B2B70E /* UIColor+SJAdd.swift */; };
+		506A9EB71FEE33BB00425931 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A9EB61FEE33BB00425931 /* CounterView.swift */; };
+		506A9EB91FEE390500425931 /* DrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A9EB81FEE390500425931 /* DrawVC.swift */; };
+		506A9EBB1FEE425D00425931 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A9EBA1FEE425D00425931 /* GraphView.swift */; };
 		506B37721FB035940015D397 /* SJPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37711FB035940015D397 /* SJPermission.swift */; };
 		506B37741FB03ED60015D397 /* SJApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37731FB03ED60015D397 /* SJApp.swift */; };
 		506B37771FB049720015D397 /* SJScanHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37761FB049720015D397 /* SJScanHelper.swift */; };
 		506EF5411FE270D20027E883 /* String+SJEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EF5401FE270D20027E883 /* String+SJEncrypt.swift */; };
+		50729C5E1FE8BC0700313C3C /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = 50729C5D1FE8BC0600313C3C /* L.png */; };
 		509273FB1FE4B63800D04BB1 /* String+SJRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509273FA1FE4B63800D04BB1 /* String+SJRegex.swift */; };
 		509BFD191FA9CC9A00999675 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509BFD181FA9CC9A00999675 /* Network.storyboard */; };
+		509F924D1FE8EE9100D6CEAD /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F924C1FE8EE9100D6CEAD /* LineView.swift */; };
+		509F92531FE90FCB00D6CEAD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F92521FE90FCB00D6CEAD /* String.swift */; };
 		50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */; };
 		50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */; };
 		50D1BC881FA81400008B4430 /* Dispatch+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC871FA81400008B4430 /* Dispatch+SJAdd.swift */; };
@@ -44,6 +50,8 @@
 		50D1BC8C1FA82357008B4430 /* UIImage+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */; };
 		50D7A21A1FBEE15500E27A65 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A2191FBEE15500E27A65 /* SupportCode.swift */; };
 		50D7A21C1FBEE19D00E27A65 /* RXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A21B1FBEE19D00E27A65 /* RXSwiftVC.swift */; };
+		50F1C8C61FEE0AEA00CBDA25 /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F1C8C51FEE0AEA00CBDA25 /* Draw.storyboard */; };
+		50F1C8C81FEE220300CBDA25 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F1C8C71FEE220300CBDA25 /* PushButton.swift */; };
 		60EF4324979A62830683712D /* Pods_Whale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30BFE122EA45831FB5921D1 /* Pods_Whale.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,12 +99,18 @@
 		505EBC9A1FA316C800B2B70E /* UIScreen+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+SJAdd.swift"; sourceTree = "<group>"; };
 		505EBC9C1FA316ED00B2B70E /* UIDevice+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+SJAdd.swift"; sourceTree = "<group>"; };
 		505EBC9E1FA31ED900B2B70E /* UIColor+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SJAdd.swift"; sourceTree = "<group>"; };
+		506A9EB61FEE33BB00425931 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		506A9EB81FEE390500425931 /* DrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawVC.swift; sourceTree = "<group>"; };
+		506A9EBA1FEE425D00425931 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		506B37711FB035940015D397 /* SJPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJPermission.swift; sourceTree = "<group>"; };
 		506B37731FB03ED60015D397 /* SJApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJApp.swift; sourceTree = "<group>"; };
 		506B37761FB049720015D397 /* SJScanHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJScanHelper.swift; sourceTree = "<group>"; };
 		506EF5401FE270D20027E883 /* String+SJEncrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SJEncrypt.swift"; sourceTree = "<group>"; };
+		50729C5D1FE8BC0600313C3C /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
 		509273FA1FE4B63800D04BB1 /* String+SJRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SJRegex.swift"; sourceTree = "<group>"; };
 		509BFD181FA9CC9A00999675 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
+		509F924C1FE8EE9100D6CEAD /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		509F92521FE90FCB00D6CEAD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		50D1BC811FA80F8A008B4430 /* Array+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC831FA8130C008B4430 /* CALayer+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SJAdd.swift"; sourceTree = "<group>"; };
 		50D1BC871FA81400008B4430 /* Dispatch+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+SJAdd.swift"; sourceTree = "<group>"; };
@@ -104,6 +118,8 @@
 		50D1BC8B1FA82357008B4430 /* UIImage+SJAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SJAdd.swift"; sourceTree = "<group>"; };
 		50D7A2191FBEE15500E27A65 /* SupportCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
 		50D7A21B1FBEE19D00E27A65 /* RXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftVC.swift; sourceTree = "<group>"; };
+		50F1C8C51FEE0AEA00CBDA25 /* Draw.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
+		50F1C8C71FEE220300CBDA25 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		6F7833A1CA02195A1942EB1E /* Pods-WhaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC991BA81A12FEBEC17F8BC8 /* Pods-WhaleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E98AEDA7A6E66B24AC70843D /* Pods-WhaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +155,8 @@
 		5033B8B11FAC0D770041E326 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				509F924F1FE90F9300D6CEAD /* Leetcode */,
+				509F924B1FE8EE6100D6CEAD /* Quart2D */,
 				50D7A2171FBEE13300E27A65 /* RXSwift */,
 				5033B8B41FAC16180041E326 /* NetWork */,
 			);
@@ -238,6 +256,7 @@
 		505EBC621FA30ABE00B2B70E /* Whale */ = {
 			isa = PBXGroup;
 			children = (
+				50729C5B1FE8BC0600313C3C /* Resources */,
 				505EBC921FA30D5700B2B70E /* Moudle */,
 				505EBC911FA30AD500B2B70E /* Supporting Files */,
 			);
@@ -329,6 +348,43 @@
 				509273FA1FE4B63800D04BB1 /* String+SJRegex.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		50729C5B1FE8BC0600313C3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50729C5C1FE8BC0600313C3C /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50729C5C1FE8BC0600313C3C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				50729C5D1FE8BC0600313C3C /* L.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		509F924B1FE8EE6100D6CEAD /* Quart2D */ = {
+			isa = PBXGroup;
+			children = (
+				50F1C8C51FEE0AEA00CBDA25 /* Draw.storyboard */,
+				506A9EB81FEE390500425931 /* DrawVC.swift */,
+				509F924C1FE8EE9100D6CEAD /* LineView.swift */,
+				50F1C8C71FEE220300CBDA25 /* PushButton.swift */,
+				506A9EB61FEE33BB00425931 /* CounterView.swift */,
+				506A9EBA1FEE425D00425931 /* GraphView.swift */,
+			);
+			path = Quart2D;
+			sourceTree = "<group>";
+		};
+		509F924F1FE90F9300D6CEAD /* Leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				509F92521FE90FCB00D6CEAD /* String.swift */,
+			);
+			path = Leetcode;
 			sourceTree = "<group>";
 		};
 		50D1BC801FA80D95008B4430 /* Foundation */ = {
@@ -425,7 +481,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50729C5E1FE8BC0700313C3C /* L.png in Resources */,
 				505EBC6E1FA30ABE00B2B70E /* LaunchScreen.storyboard in Resources */,
+				50F1C8C61FEE0AEA00CBDA25 /* Draw.storyboard in Resources */,
 				505EBC6B1FA30ABE00B2B70E /* Assets.xcassets in Resources */,
 				505EBC691FA30ABE00B2B70E /* Main.storyboard in Resources */,
 				509BFD191FA9CC9A00999675 /* Network.storyboard in Resources */,
@@ -514,14 +572,17 @@
 			files = (
 				50158B5F1FE76A690013CC64 /* UINavigationBar+SJAdd.swift in Sources */,
 				5033B8C11FAC1BC20041E326 /* Song.swift in Sources */,
+				506A9EB91FEE390500425931 /* DrawVC.swift in Sources */,
 				5033B8BC1FAC16D40041E326 /* SongCell.swift in Sources */,
 				50D1BC841FA8130C008B4430 /* CALayer+SJAdd.swift in Sources */,
 				505EBC941FA30D5700B2B70E /* ViewController.swift in Sources */,
 				505EBC641FA30ABE00B2B70E /* AppDelegate.swift in Sources */,
+				509F92531FE90FCB00D6CEAD /* String.swift in Sources */,
 				50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */,
 				5033B8BF1FAC171E0041E326 /* StoryboardHelper.swift in Sources */,
 				501808051FC6710E00391741 /* DownloadHelper.swift in Sources */,
 				505EBC9B1FA316C800B2B70E /* UIScreen+SJAdd.swift in Sources */,
+				50F1C8C81FEE220300CBDA25 /* PushButton.swift in Sources */,
 				509273FB1FE4B63800D04BB1 /* String+SJRegex.swift in Sources */,
 				506B37771FB049720015D397 /* SJScanHelper.swift in Sources */,
 				5033B8CA1FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift in Sources */,
@@ -539,11 +600,14 @@
 				5033B8C61FAC39BB0041E326 /* RequestHelper.swift in Sources */,
 				504DF6041FA32353009AC5F2 /* UIImageView+SJAdd.swift in Sources */,
 				501DFC141FDF799700EE0D81 /* SJCache.swift in Sources */,
+				506A9EB71FEE33BB00425931 /* CounterView.swift in Sources */,
 				504DF6081FA3237F009AC5F2 /* UIView+SJAdd.swift in Sources */,
+				506A9EBB1FEE425D00425931 /* GraphView.swift in Sources */,
 				50D7A21A1FBEE15500E27A65 /* SupportCode.swift in Sources */,
 				50D1BC8C1FA82357008B4430 /* UIImage+SJAdd.swift in Sources */,
 				50D1BC8A1FA8142B008B4430 /* Number+SJAdd.swift in Sources */,
 				506B37721FB035940015D397 /* SJPermission.swift in Sources */,
+				509F924D1FE8EE9100D6CEAD /* LineView.swift in Sources */,
 				501808031FC66F2100391741 /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

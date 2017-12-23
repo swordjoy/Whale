@@ -49,56 +49,22 @@ class ViewController: UIViewController {
     @IBAction func callAction(_ sender: UIButton) {
         UIApplication.shared.isIdleTimerDisabled = true
     }
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var left: UILabel!
-    @IBOutlet weak var right: UILabel!
+
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var textField: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("15608222076".sj.isMatchChinaPhoneNumber)
-        
-//        guard let urlComponents = URLComponents.init(string: "http://mobile.hktsc.cc/services/list?appPage=serviceList&brandId=1") else {
-//            return
-//        }
-//
-//        if let scheme = urlComponents.scheme {
-//            print("scheme: \(scheme)")
-//        }
-//
-//        if let user = urlComponents.user {
-//            print("user: \(user)")
-//        }
-//
-//        if let password = urlComponents.password {
-//            print("password: \(password)")
-//        }
-//
-//        if let host = urlComponents.host {
-//            print("host: \(host)")
-//        }
-//
-//        if let port = urlComponents.port {
-//            print("port: \(port)")
-//        }
-//
-//        print("path: \(urlComponents.path)")
-//
-//        if let query = urlComponents.query {
-//            print("query: \(query)")
-//        }
-//
-//        if let queryItems = urlComponents.queryItems {
-//            print("queryItems: \(queryItems)")
-//
-//            for (index, queryItem) in queryItems.enumerated() {
-//                print("第\(index)个queryItem name:\(queryItem.name)")
-//                if let value = queryItem.value {
-//                    print("第\(index)个queryItem value:\(value)")
-//                }
-//            }
-//        }
+        let lineView = LineView()
+        lineView.backgroundColor = UIColor.red
+        view.addSubview(lineView)
+        lineView.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.height.width.equalTo(100)
+        }
+
     }
 }
 
