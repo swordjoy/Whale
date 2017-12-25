@@ -57,12 +57,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let lineView = LineView()
-        lineView.backgroundColor = UIColor.red
-        view.addSubview(lineView)
-        lineView.snp.makeConstraints { (make) in
+        let slider = UISlider()
+        slider.maximumValue = 100
+        slider.minimumValue = 0
+        slider.value = 50
+        slider.minimumTrackTintColor = UIColor.red
+        slider.maximumTrackTintColor = UIColor.blue
+        let trans = CGAffineTransform(rotationAngle: .pi * 0.5)
+        slider.transform = trans
+        view.addSubview(slider)
+        slider.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
-            make.height.width.equalTo(100)
+            make.width.equalTo(200)
+            make.height.equalTo(5)
         }
 
     }

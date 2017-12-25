@@ -20,3 +20,18 @@ public extension SwordJoy where Base: UITextField {
     }
     
 }
+
+// placeholder 居中
+extension String {
+    func attributedString(aligment: NSTextAlignment) -> NSAttributedString {
+        return NSAttributedString(text: self, aligment: aligment)
+    }
+}
+
+extension NSAttributedString {
+    convenience init(text: String, aligment: NSTextAlignment) {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = aligment
+        self.init(string: text, attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle])
+    }
+}
