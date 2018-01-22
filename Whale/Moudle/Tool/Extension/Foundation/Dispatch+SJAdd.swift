@@ -9,8 +9,6 @@
 import Foundation
 import Dispatch
 
-
-
 /// 主线程运行闭包
 ///
 /// - Parameter block: 需要在主线程运行的闭包代码

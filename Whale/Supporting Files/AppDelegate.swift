@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        var numbers = [1, 8, 6, 7, 0, 2, 5]
+        insertSort(&numbers)
+        print(numbers)
+        
         return true
     }
 

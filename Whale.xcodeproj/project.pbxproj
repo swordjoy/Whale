@@ -23,6 +23,7 @@
 		504DF6041FA32353009AC5F2 /* UIImageView+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DF6031FA32353009AC5F2 /* UIImageView+SJAdd.swift */; };
 		504DF6081FA3237F009AC5F2 /* UIView+SJAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DF6071FA3237F009AC5F2 /* UIView+SJAdd.swift */; };
 		504DF60B1FA32390009AC5F2 /* SwordJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DF60A1FA32390009AC5F2 /* SwordJoy.swift */; };
+		505740611FFDB9B40070E402 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505740601FFDB9B40070E402 /* Sort.swift */; };
 		505EBC641FA30ABE00B2B70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505EBC631FA30ABE00B2B70E /* AppDelegate.swift */; };
 		505EBC691FA30ABE00B2B70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505EBC671FA30ABE00B2B70E /* Main.storyboard */; };
 		505EBC6B1FA30ABE00B2B70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505EBC6A1FA30ABE00B2B70E /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		506B37771FB049720015D397 /* SJScanHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B37761FB049720015D397 /* SJScanHelper.swift */; };
 		506EF5411FE270D20027E883 /* String+SJEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EF5401FE270D20027E883 /* String+SJEncrypt.swift */; };
 		50729C5E1FE8BC0700313C3C /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = 50729C5D1FE8BC0600313C3C /* L.png */; };
+		507B77171FFB2DFC006C9468 /* SJNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507B77161FFB2DFC006C9468 /* SJNetwork.swift */; };
 		509273FB1FE4B63800D04BB1 /* String+SJRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509273FA1FE4B63800D04BB1 /* String+SJRegex.swift */; };
 		509BFD191FA9CC9A00999675 /* Network.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509BFD181FA9CC9A00999675 /* Network.storyboard */; };
 		509F924D1FE8EE9100D6CEAD /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F924C1FE8EE9100D6CEAD /* LineView.swift */; };
@@ -89,6 +91,7 @@
 		504DF6031FA32353009AC5F2 /* UIImageView+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SJAdd.swift"; sourceTree = "<group>"; };
 		504DF6071FA3237F009AC5F2 /* UIView+SJAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SJAdd.swift"; sourceTree = "<group>"; };
 		504DF60A1FA32390009AC5F2 /* SwordJoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwordJoy.swift; sourceTree = "<group>"; };
+		505740601FFDB9B40070E402 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		505EBC601FA30ABE00B2B70E /* Whale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505EBC631FA30ABE00B2B70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505EBC681FA30ABE00B2B70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 		506B37761FB049720015D397 /* SJScanHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJScanHelper.swift; sourceTree = "<group>"; };
 		506EF5401FE270D20027E883 /* String+SJEncrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SJEncrypt.swift"; sourceTree = "<group>"; };
 		50729C5D1FE8BC0600313C3C /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
+		507B77161FFB2DFC006C9468 /* SJNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJNetwork.swift; sourceTree = "<group>"; };
 		509273FA1FE4B63800D04BB1 /* String+SJRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SJRegex.swift"; sourceTree = "<group>"; };
 		509BFD181FA9CC9A00999675 /* Network.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Network.storyboard; sourceTree = "<group>"; };
 		509F924C1FE8EE9100D6CEAD /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
@@ -329,6 +333,7 @@
 				506B37731FB03ED60015D397 /* SJApp.swift */,
 				506B37711FB035940015D397 /* SJPermission.swift */,
 				501DFC131FDF799700EE0D81 /* SJCache.swift */,
+				507B77161FFB2DFC006C9468 /* SJNetwork.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				509F92521FE90FCB00D6CEAD /* String.swift */,
+				505740601FFDB9B40070E402 /* Sort.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -579,10 +585,12 @@
 				505EBC641FA30ABE00B2B70E /* AppDelegate.swift in Sources */,
 				509F92531FE90FCB00D6CEAD /* String.swift in Sources */,
 				50D1BC821FA80F8A008B4430 /* Array+SJAdd.swift in Sources */,
+				507B77171FFB2DFC006C9468 /* SJNetwork.swift in Sources */,
 				5033B8BF1FAC171E0041E326 /* StoryboardHelper.swift in Sources */,
 				501808051FC6710E00391741 /* DownloadHelper.swift in Sources */,
 				505EBC9B1FA316C800B2B70E /* UIScreen+SJAdd.swift in Sources */,
 				50F1C8C81FEE220300CBDA25 /* PushButton.swift in Sources */,
+				505740611FFDB9B40070E402 /* Sort.swift in Sources */,
 				509273FB1FE4B63800D04BB1 /* String+SJRegex.swift in Sources */,
 				506B37771FB049720015D397 /* SJScanHelper.swift in Sources */,
 				5033B8CA1FAC59A40041E326 /* SearchVC+UISearchBarDelegate.swift in Sources */,
